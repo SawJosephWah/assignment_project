@@ -27,58 +27,65 @@ h1 {
 
 .card {
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 250px;
+    /* Reduced border radius for a sharper, modern look */
+    border-radius: 4px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
-    padding: 20px;
+    overflow: hidden; 
     transition: transform 0.3s ease;
-    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    display: block;
+    /* No border radius here so it stays flush with the card top */
+}
+
+/* Updated padding for the text area */
+.card-content {
+    padding: 24px 15px; /* Top/Bottom padding 24px, Left/Right 15px */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Adds consistent spacing between name, price, and button */
 }
 
 .card h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #444;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 600;
 }
 
 .card p {
     color: #d4a373;
-    /* Gold/Nude tone for luxury feel */
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 5px 0 15px 0;
 }
 
 .card button {
-    background-color: #333;
+    background-color: #111;
     color: white;
     border: none;
     width: 100%;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 2px; /* Matches the sharper card style */
     cursor: pointer;
     font-weight: 600;
-    transition: background 0.3s;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
-
-.card button:hover {
-    background-color: pink;
-    color: #333;
-}
-
 .navbar {
     background-color: white;
     padding: 15px 5%;
