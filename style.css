@@ -1,5 +1,11 @@
 /* Navigation Bar Styling */
-
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 530;
+    font-style: normal;
+    background-color: #fcfcfc;
+    margin: 0;
+}
 
 /* style.css */
 
@@ -9,6 +15,14 @@
     --bg-light: #f9fafb;
     --text-gray: #6b7280;
     --white: #ffffff;
+}
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 530;
+    font-style: normal;
+    background-color: #fcfcfc;
+    margin: 0;
 }
 
 body {
@@ -32,17 +46,29 @@ body {
     text-align: center;
 }
 
-h1 { color: var(--primary-color); margin-bottom: 8px; font-size: 26px; }
-p { color: var(--text-gray); font-size: 14px; margin-bottom: 30px; }
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 26px;
+}
 
-.form-group { text-align: left; margin-bottom: 18px; }
+p {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
 
-label { 
-    display: block; 
-    font-size: 13px; 
-    font-weight: 600; 
-    margin-bottom: 8px; 
-    color: #374151; 
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
 }
 
 input {
@@ -74,9 +100,23 @@ input:focus {
     font-size: 16px;
 }
 
-.btn-register { background-color: var(--accent-color); }
+.btn-register {
+    background-color: var(--accent-color);
+}
 
-.btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
 
-.footer-link { margin-top: 25px; font-size: 14px; color: var(--text-gray); }
-.footer-link a { color: var(--accent-color); text-decoration: none; font-weight: 600; }
+.footer-link {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.footer-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
