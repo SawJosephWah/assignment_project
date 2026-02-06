@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success | Glow Cosmetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@530&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .success-card {
+            background: white;
+            padding: 50px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            border: 1px solid #eee;
+        }
+
+        .checkmark-icon {
+            font-size: 60px;
+            color: #10b981;
+            /* Success Green */
+            margin-bottom: 20px;
+        }
+
+        .success-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .order-number {
+            background: #f9fafb;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #444;
+            margin: 20px 0;
+            border: 1px dashed #ddd;
+        }
+
+        .success-message {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .back-home-btn {
+            background-color: #111;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 530;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .back-home-btn:hover {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="success-wrapper">
+        <div class="success-card">
+            <div class="checkmark-icon">✓</div>
+            <h1>THANK YOU!</h1>
+            <p class="success-message">Your order has been placed successfully. We’ve sent a confirmation email to your
+                inbox.</p>
+
+            <div class="order-number">
+                ORDER ID: #GLW-992834
+            </div>
+
+            <p class="success-message">Estimated delivery: 3-5 business days.</p>
+
+            <a href="index.html" class="back-home-btn">Continue Shopping</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
